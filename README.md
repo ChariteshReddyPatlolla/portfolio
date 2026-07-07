@@ -2,8 +2,7 @@
 
 A retro, cyberpunk operating system-themed portfolio workstation designed and built for **Patlolla Charitesh Reddy** (Computer Science Undergraduate — Software Engineering & Distributed Systems).
 
-🔗 **Live Deployment Link:** [https://portfolio-mot539ykr-charitesh.vercel.app/](https://portfolio-mot539ykr-charitesh.vercel.app/)
-
+🔗 **Live Deployment Link:**[https://portfolio-4us12yjga-charitesh.vercel.app/](https://portfolio-4us12yjga-charitesh.vercel.app/)
 ---
 
 ## 🖥️ Core Features
