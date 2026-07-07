@@ -117,8 +117,9 @@ export default function Terminal() {
             <div><span className="text-gray-500">Email:</span> <a href="mailto:pchariteshreddy@gmail.com" className="text-[#ccff00] underline">pchariteshreddy@gmail.com</a></div>
             <div><span className="text-gray-500">Phone:</span> +91 7702728144</div>
             <div><span className="text-gray-500">LinkedIn:</span> <a href="https://linkedin.com" target="_blank" className="text-[#ccff00] underline">linkedin.com/in/charitesh-reddy</a></div>
-            <div><span className="text-gray-500">GitHub:</span> <a href="https://github.com" target="_blank" className="text-[#ccff00] underline">github.com/ChariteshReddyPatlolla</a></div>
-            <div><span className="text-gray-500">LeetCode:</span> <a href="https://leetcode.com" target="_blank" className="text-[#ccff00] underline">leetcode.com/u/pchariteshreddy</a></div>
+            <div><span className="text-gray-500">GitHub:</span> <a href="https://github.com/ChariteshReddyPatlolla" target="_blank" className="text-[#ccff00] underline">github.com/ChariteshReddyPatlolla</a></div>
+            <div><span className="text-gray-500">LeetCode:</span> <a href="https://leetcode.com/u/pchariteshreddy" target="_blank" className="text-[#ccff00] underline">leetcode.com/u/pchariteshreddy</a></div>
+            <div><span className="text-gray-500">CodeChef:</span> <a href="https://www.codechef.com/users/arjunreddy29" target="_blank" className="text-[#ccff00] underline">CodeChef 4-Star Coder</a></div>
           </div>
         );
         break;
@@ -143,6 +144,7 @@ export default function Terminal() {
               <div><span className="text-gray-500">CPI:</span> 7.32 / 10</div>
               <div><span className="text-gray-500">LeetCode Rating:</span> 1836+ (Knight)</div>
               <div><span className="text-gray-500">Codeforces Rating:</span> 1400+ (Specialist)</div>
+              <div><span className="text-gray-500">CodeChef:</span> 4 Star Coder</div>
             </div>
           </div>
         );

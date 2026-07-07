@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { 
   Trophy, Code, Cpu, Award, BookOpen, Camera, 
-  Mail, Phone, ExternalLink, Activity
+  Mail, Phone, ExternalLink, Activity, ShieldCheck
 } from "lucide-react";
 
 export default function PortfolioSection() {
@@ -44,13 +44,13 @@ export default function PortfolioSection() {
         </div>
 
         <div className="flex flex-wrap gap-4 text-xs">
-          <a href="https://linkedin.com" target="_blank" className="flex items-center gap-1 px-3 py-1.5 border border-[#222] hover:border-[#ccff00] hover:text-[#ccff00] transition-colors rounded bg-[#0a0a0a]">
+          <a href="https://www.linkedin.com/in/charitesh-patlolla-32a269337/" target="_blank" className="flex items-center gap-1 px-3 py-1.5 border border-[#222] hover:border-[#ccff00] hover:text-[#ccff00] transition-colors rounded bg-[#0a0a0a]">
             <ExternalLink size={12} /> LinkedIn
           </a>
-          <a href="https://github.com" target="_blank" className="flex items-center gap-1 px-3 py-1.5 border border-[#222] hover:border-[#ccff00] hover:text-[#ccff00] transition-colors rounded bg-[#0a0a0a]">
+          <a href="https://github.com/ChariteshReddyPatlolla" target="_blank" className="flex items-center gap-1 px-3 py-1.5 border border-[#222] hover:border-[#ccff00] hover:text-[#ccff00] transition-colors rounded bg-[#0a0a0a]">
             <Code size={12} /> GitHub
           </a>
-          <a href="https://leetcode.com" target="_blank" className="flex items-center gap-1 px-3 py-1.5 border border-[#222] hover:border-[#ccff00] hover:text-[#ccff00] transition-colors rounded bg-[#0a0a0a]">
+          <a href="https://leetcode.com/u/chariteshreddy/" target="_blank" className="flex items-center gap-1 px-3 py-1.5 border border-[#222] hover:border-[#ccff00] hover:text-[#ccff00] transition-colors rounded bg-[#0a0a0a]">
             <Code size={12} /> LeetCode
           </a>
         </div>
@@ -63,7 +63,7 @@ export default function PortfolioSection() {
           <div className="h-px flex-1 bg-[#111]"></div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Card 1 */}
           <div className="relative bg-[#0a0a0a] border border-[#222] hover:border-[#ccff00] transition-all p-6 rounded-md group">
             <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-[#ccff00] opacity-40 group-hover:opacity-100"></div>
@@ -71,8 +71,8 @@ export default function PortfolioSection() {
             
             <Trophy className="text-[#ccff00] mb-3" size={24} />
             <div className="text-3xl font-black text-white">1836+</div>
-            <div className="text-[10px] text-gray-500 uppercase tracking-widest mt-1">LeetCode Rating (Knight)</div>
-            <p className="text-[11px] text-gray-400 mt-2">Solved 350+ problems with robust algorithm approaches.</p>
+            <div className="text-[10px] text-gray-500 uppercase tracking-widest mt-1">LeetCode Rating</div>
+            <p className="text-[11px] text-gray-400 mt-2">Knight level. Solved 350+ data structures problems.</p>
           </div>
 
           {/* Card 2 */}
@@ -82,11 +82,22 @@ export default function PortfolioSection() {
             
             <Cpu className="text-[#ccff00] mb-3" size={24} />
             <div className="text-3xl font-black text-white">1400+</div>
-            <div className="text-[10px] text-gray-500 uppercase tracking-widest mt-1">Codeforces Rating (Specialist)</div>
-            <p className="text-[11px] text-gray-400 mt-2">Ranked Specialist. Participated in regular competitive contests.</p>
+            <div className="text-[10px] text-gray-500 uppercase tracking-widest mt-1">Codeforces Rating</div>
+            <p className="text-[11px] text-gray-400 mt-2">Specialist level. Participated in regular algorithm contests.</p>
           </div>
 
           {/* Card 3 */}
+          <div className="relative bg-[#0a0a0a] border border-[#222] hover:border-[#ccff00] transition-all p-6 rounded-md group">
+            <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-[#ccff00] opacity-40 group-hover:opacity-100"></div>
+            <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-[#ccff00] opacity-40 group-hover:opacity-100"></div>
+            
+            <ShieldCheck className="text-[#ccff00] mb-3" size={24} />
+            <div className="text-3xl font-black text-white">4 Star</div>
+            <div className="text-[10px] text-gray-500 uppercase tracking-widest mt-1">CodeChef Coder</div>
+            <p className="text-[11px] text-gray-400 mt-2">Active competitive coder solving regular div2/div3 contests.</p>
+          </div>
+
+          {/* Card 4 */}
           <div className="relative bg-[#0a0a0a] border border-[#222] hover:border-[#ccff00] transition-all p-6 rounded-md group">
             <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-[#ccff00] opacity-40 group-hover:opacity-100"></div>
             <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-[#ccff00] opacity-40 group-hover:opacity-100"></div>
@@ -152,7 +163,7 @@ export default function PortfolioSection() {
             <div className="space-y-3">
               <div className="flex justify-between items-start">
                 <h3 className="text-lg font-bold text-white tracking-tight">OmniAgent – Offline AI Copilot</h3>
-                <a href="https://github.com" target="_blank" className="text-gray-500 hover:text-[#ccff00]"><ExternalLink size={14} /></a>
+                <a href="https://github.com/ChariteshReddyPatlolla/offline-assitance" target="_blank" className="text-gray-500 hover:text-[#ccff00]"><ExternalLink size={14} /></a>
               </div>
               <ul className="text-xs text-gray-400 space-y-2 list-disc list-inside">
                 <li>Architected a modular multi-agent system using FastAPI, LangGraph, and local LLMs supporting concurrent task execution and secure workflow orchestration.</li>
@@ -176,8 +187,47 @@ export default function PortfolioSection() {
           <div className="bg-[#0a0a0a] border border-[#222] p-6 rounded hover:border-[#ccff00]/60 transition-all flex flex-col justify-between">
             <div className="space-y-3">
               <div className="flex justify-between items-start">
+                <h3 className="text-lg font-bold text-white tracking-tight">Distributed AI Inference Gateway</h3>
+                <a href="https://github.com/ChariteshReddyPatlolla/Distributed-AI-Inference-Gateway" target="_blank" className="text-gray-500 hover:text-[#ccff00]"><ExternalLink size={14} /></a>
+              </div>
+              <ul className="text-xs text-gray-400 space-y-2 list-disc list-inside">
+                <li>Built a high-performance Distributed AI Inference Gateway supporting request routing and concurrency.</li>
+                <li>Managed load distribution across multiple backend inference worker nodes to minimize latency.</li>
+              </ul>
+            </div>
+            <div className="flex flex-wrap gap-2 mt-4 text-[10px]">
+              <span className="bg-[#111] px-2 py-1 rounded text-[#ccff00] border border-[#222]">Python</span>
+              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">Distributed Systems</span>
+              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">Inference Gateway</span>
+            </div>
+          </div>
+
+          {/* Project 3 */}
+          <div className="bg-[#0a0a0a] border border-[#222] p-6 rounded hover:border-[#ccff00]/60 transition-all flex flex-col justify-between">
+            <div className="space-y-3">
+              <div className="flex justify-between items-start">
+                <h3 className="text-lg font-bold text-white tracking-tight">Network Analyser (ML & LLM)</h3>
+                <a href="https://github.com/ChariteshReddyPatlolla/Network-Analyser-using-ML-and-LLM" target="_blank" className="text-gray-500 hover:text-[#ccff00]"><ExternalLink size={14} /></a>
+              </div>
+              <ul className="text-xs text-gray-400 space-y-2 list-disc list-inside">
+                <li>Intelligent Network Analysis system combining ML and LLMs to predict network latency and bandwidth.</li>
+                <li>Built a hybrid deep learning model and interactive dashboard rendering optimization tips and insights.</li>
+              </ul>
+            </div>
+            <div className="flex flex-wrap gap-2 mt-4 text-[10px]">
+              <span className="bg-[#111] px-2 py-1 rounded text-[#ccff00] border border-[#222]">Python</span>
+              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">Machine Learning</span>
+              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">LLMs</span>
+              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">Dashboard</span>
+            </div>
+          </div>
+
+          {/* Project 4 */}
+          <div className="bg-[#0a0a0a] border border-[#222] p-6 rounded hover:border-[#ccff00]/60 transition-all flex flex-col justify-between">
+            <div className="space-y-3">
+              <div className="flex justify-between items-start">
                 <h3 className="text-lg font-bold text-white tracking-tight">Finance Management System</h3>
-                <a href="https://github.com" target="_blank" className="text-gray-500 hover:text-[#ccff00]"><ExternalLink size={14} /></a>
+                <a href="https://github.com/ChariteshReddyPatlolla/Finance-Managment-system" target="_blank" className="text-gray-500 hover:text-[#ccff00]"><ExternalLink size={14} /></a>
               </div>
               <ul className="text-xs text-gray-400 space-y-2 list-disc list-inside">
                 <li>Designed and implemented a full-stack finance management application using Flask, SQL, and JavaScript.</li>
@@ -191,12 +241,12 @@ export default function PortfolioSection() {
             </div>
           </div>
 
-          {/* Project 3 */}
+          {/* Project 5 */}
           <div className="bg-[#0a0a0a] border border-[#222] p-6 rounded hover:border-[#ccff00]/60 transition-all flex flex-col justify-between">
             <div className="space-y-3">
               <div className="flex justify-between items-start">
                 <h3 className="text-lg font-bold text-white tracking-tight">Sign Language Translation System</h3>
-                <a href="https://github.com" target="_blank" className="text-gray-500 hover:text-[#ccff00]"><ExternalLink size={14} /></a>
+                <a href="https://github.com/ChariteshReddyPatlolla/sign-language-translation" target="_blank" className="text-gray-500 hover:text-[#ccff00]"><ExternalLink size={14} /></a>
               </div>
               <ul className="text-xs text-gray-400 space-y-2 list-disc list-inside">
                 <li>Developed a real-time computer vision pipeline for sign language recognition using OpenCV and TensorFlow.</li>
@@ -207,6 +257,83 @@ export default function PortfolioSection() {
               <span className="bg-[#111] px-2 py-1 rounded text-[#ccff00] border border-[#222]">Python</span>
               <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">OpenCV</span>
               <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">TensorFlow</span>
+            </div>
+          </div>
+
+          {/* Project 6 */}
+          <div className="bg-[#0a0a0a] border border-[#222] p-6 rounded hover:border-[#ccff00]/60 transition-all flex flex-col justify-between">
+            <div className="space-y-3">
+              <div className="flex justify-between items-start">
+                <h3 className="text-lg font-bold text-white tracking-tight">lost_found_project</h3>
+                <a href="https://github.com/ChariteshReddyPatlolla/lost_found_project" target="_blank" className="text-gray-500 hover:text-[#ccff00]"><ExternalLink size={14} /></a>
+              </div>
+              <ul className="text-xs text-gray-400 space-y-2 list-disc list-inside">
+                <li>Designed a community lost and found portal supporting item reporting and secure query filters.</li>
+                <li>Developed simple REST endpoints and client search interactions.</li>
+              </ul>
+            </div>
+            <div className="flex flex-wrap gap-2 mt-4 text-[10px]">
+              <span className="bg-[#111] px-2 py-1 rounded text-[#ccff00] border border-[#222]">JavaScript</span>
+              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">HTML5</span>
+              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">CSS3</span>
+            </div>
+          </div>
+
+          {/* Project 7 */}
+          <div className="bg-[#0a0a0a] border border-[#222] p-6 rounded hover:border-[#ccff00]/60 transition-all flex flex-col justify-between">
+            <div className="space-y-3">
+              <div className="flex justify-between items-start">
+                <h3 className="text-lg font-bold text-white tracking-tight">productive_timer</h3>
+                <a href="https://github.com/ChariteshReddyPatlolla/productive_timer" target="_blank" className="text-gray-500 hover:text-[#ccff00]"><ExternalLink size={14} /></a>
+              </div>
+              <ul className="text-xs text-gray-400 space-y-2 list-disc list-inside">
+                <li>Designed a productivity timer packaged as a lightweight browser extension.</li>
+                <li>Integrated session time loggers and stats indicators.</li>
+              </ul>
+            </div>
+            <div className="flex flex-wrap gap-2 mt-4 text-[10px]">
+              <span className="bg-[#111] px-2 py-1 rounded text-[#ccff00] border border-[#222]">TypeScript</span>
+              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">Web Extension</span>
+              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">JavaScript</span>
+            </div>
+          </div>
+
+          {/* Project 8 */}
+          <div className="bg-[#0a0a0a] border border-[#222] p-6 rounded hover:border-[#ccff00]/60 transition-all flex flex-col justify-between">
+            <div className="space-y-3">
+              <div className="flex justify-between items-start">
+                <h3 className="text-lg font-bold text-white tracking-tight">stock-price-predector</h3>
+                <a href="https://github.com/ChariteshReddyPatlolla/stock-price-predector" target="_blank" className="text-gray-500 hover:text-[#ccff00]"><ExternalLink size={14} /></a>
+              </div>
+              <ul className="text-xs text-gray-400 space-y-2 list-disc list-inside">
+                <li>Designed an LSTM time-series model to forecast stock price volatility parameters.</li>
+                <li>Validated accuracy with MAE and RMSE performance metrics.</li>
+              </ul>
+            </div>
+            <div className="flex flex-wrap gap-2 mt-4 text-[10px]">
+              <span className="bg-[#111] px-2 py-1 rounded text-[#ccff00] border border-[#222]">Python</span>
+              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">LSTM</span>
+              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">TensorFlow</span>
+              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">Jupyter Notebook</span>
+            </div>
+          </div>
+
+          {/* Project 9 */}
+          <div className="bg-[#0a0a0a] border border-[#222] p-6 rounded hover:border-[#ccff00]/60 transition-all flex flex-col justify-between">
+            <div className="space-y-3">
+              <div className="flex justify-between items-start">
+                <h3 className="text-lg font-bold text-white tracking-tight">driver-drowsiness-detection</h3>
+                <a href="https://github.com/ChariteshReddyPatlolla/driver-drowsiness-detection" target="_blank" className="text-gray-500 hover:text-[#ccff00]"><ExternalLink size={14} /></a>
+              </div>
+              <ul className="text-xs text-gray-400 space-y-2 list-disc list-inside">
+                <li>Built real-time drowsiness warning classifier using facial landmark cues.</li>
+                <li>Monitored eye and mouth aspect ratios to trigger warnings dynamically.</li>
+              </ul>
+            </div>
+            <div className="flex flex-wrap gap-2 mt-4 text-[10px]">
+              <span className="bg-[#111] px-2 py-1 rounded text-[#ccff00] border border-[#222]">Python</span>
+              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">OpenCV</span>
+              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">Facial Landmarks</span>
             </div>
           </div>
         </div>
@@ -227,6 +354,10 @@ export default function PortfolioSection() {
           <li className="flex items-start gap-2.5">
             <span className="text-[#ccff00] shrink-0 font-bold">&gt;</span>
             <span>Codeforces competitive ranking: <strong className="text-white">1400+ Specialist</strong>.</span>
+          </li>
+          <li className="flex items-start gap-2.5">
+            <span className="text-[#ccff00] shrink-0 font-bold">&gt;</span>
+            <span>CodeChef competitive profile: <strong className="text-white">4 Star Coder</strong>.</span>
           </li>
           <li className="flex items-start gap-2.5">
             <span className="text-[#ccff00] shrink-0 font-bold">&gt;</span>

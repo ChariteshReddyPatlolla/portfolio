@@ -151,6 +151,7 @@ export default function ChariteshResumePage() {
             <ul className="list-inside list-disc pl-4 text-gray-400 text-xs print:text-black space-y-1.5">
               <li>LeetCode Rating: <strong className="text-white print:text-black">1836+ Knight</strong> (Solved 350+ problems).</li>
               <li>Codeforces Rating: <strong className="text-white print:text-black">1400+ Specialist</strong>.</li>
+              <li>CodeChef Rating: <strong className="text-white print:text-black">4 Star Coder</strong>.</li>
               <li>Strong understanding of Graph Algorithms, Dynamic Programming, Trees, Binary Search, Greedy Algorithms, Segment Trees, and String Algorithms.</li>
               <li>Authored article <em className="text-white print:text-black">"Representation of Widowhood in Indian Cinema"</em> in the book "Exploring the Gender-Technology Consecution."</li>
               <li>Core Member — Obscura Photography Club, IIIT Vadodara.</li>

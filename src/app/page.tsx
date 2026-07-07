@@ -26,8 +26,19 @@ export default function Home() {
     projects: false,
   });
 
+  React.useEffect(() => {
+    if (sessionStorage.getItem("system_booted") === "true") {
+      setStage("DESKTOP");
+    }
+  }, []);
+
   const toggleApp = (app: keyof typeof openApps) => {
     setOpenApps((prev) => ({ ...prev, [app]: !prev[app] }));
+  };
+
+  const handleUnlock = () => {
+    sessionStorage.setItem("system_booted", "true");
+    setStage("DESKTOP");
   };
 
   if (stage === "BIOS") {
@@ -35,7 +46,7 @@ export default function Home() {
   }
 
   if (stage === "LOCK") {
-    return <LockScreen onUnlock={() => setStage("DESKTOP")} />;
+    return <LockScreen onUnlock={handleUnlock} />;
   }
 
   return (
@@ -177,18 +188,42 @@ export default function Home() {
           <Window title="projects/" onClose={() => toggleApp("projects")} initialX={320} initialY={60}>
             <div className="space-y-4 font-mono text-xs text-gray-300">
               <div className="text-gray-500 font-bold uppercase tracking-widest border-b border-[#222] pb-1">DIRECTORY // projects/</div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 max-h-[260px] overflow-y-auto pr-1">
                 <Link href="/projects/omni-agent" className="p-3 border border-[#222] rounded hover:border-[#ccff00] hover:bg-[#ccff00]/5 transition-all">
                   <div className="font-bold text-white mb-1">omni-agent/</div>
-                  <span className="text-[10px] text-gray-500">Offline AI Copilot with local LLMs.</span>
+                  <span className="text-[10px] text-gray-500">Offline AI Copilot (local LLMs).</span>
+                </Link>
+                <Link href="/projects/distributed-gateway" className="p-3 border border-[#222] rounded hover:border-[#ccff00] hover:bg-[#ccff00]/5 transition-all">
+                  <div className="font-bold text-white mb-1">distributed-gateway/</div>
+                  <span className="text-[10px] text-gray-500">AI Inference Gateway router.</span>
+                </Link>
+                <Link href="/projects/network-analyser" className="p-3 border border-[#222] rounded hover:border-[#ccff00] hover:bg-[#ccff00]/5 transition-all">
+                  <div className="font-bold text-white mb-1">network-analyser/</div>
+                  <span className="text-[10px] text-gray-500">Intelligent network predictor.</span>
                 </Link>
                 <Link href="/projects/finance-management" className="p-3 border border-[#222] rounded hover:border-[#ccff00] hover:bg-[#ccff00]/5 transition-all">
                   <div className="font-bold text-white mb-1">finance-management/</div>
-                  <span className="text-[10px] text-gray-500">Expense tracking & user portals.</span>
+                  <span className="text-[10px] text-gray-500">Expense tracking web dashboard.</span>
                 </Link>
                 <Link href="/projects/sign-language" className="p-3 border border-[#222] rounded hover:border-[#ccff00] hover:bg-[#ccff00]/5 transition-all">
                   <div className="font-bold text-white mb-1">sign-language/</div>
-                  <span className="text-[10px] text-gray-500">Vision pipeline for translation.</span>
+                  <span className="text-[10px] text-gray-500">Sign language camera translation.</span>
+                </Link>
+                <Link href="/projects/lost-found" className="p-3 border border-[#222] rounded hover:border-[#ccff00] hover:bg-[#ccff00]/5 transition-all">
+                  <div className="font-bold text-white mb-1">lost-found/</div>
+                  <span className="text-[10px] text-gray-500">Lost and found database portal.</span>
+                </Link>
+                <Link href="/projects/productive-timer" className="p-3 border border-[#222] rounded hover:border-[#ccff00] hover:bg-[#ccff00]/5 transition-all">
+                  <div className="font-bold text-white mb-1">productive-timer/</div>
+                  <span className="text-[10px] text-gray-500">Productivity tracking extension.</span>
+                </Link>
+                <Link href="/projects/stock-prediction" className="p-3 border border-[#222] rounded hover:border-[#ccff00] hover:bg-[#ccff00]/5 transition-all">
+                  <div className="font-bold text-white mb-1">stock-prediction/</div>
+                  <span className="text-[10px] text-gray-500">Time-series forecasting LSTM.</span>
+                </Link>
+                <Link href="/projects/driver-drowsiness" className="p-3 border border-[#222] rounded hover:border-[#ccff00] hover:bg-[#ccff00]/5 transition-all">
+                  <div className="font-bold text-white mb-1">driver-drowsiness/</div>
+                  <span className="text-[10px] text-gray-500">Facial landmark fatigue monitor.</span>
                 </Link>
               </div>
             </div>

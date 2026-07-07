@@ -7,6 +7,7 @@ import { X, Square, Minus } from "lucide-react";
 interface WindowProps {
   title: string;
   onClose: () => void;
+  onMinimize?: () => void;
   children: React.ReactNode;
   initialX?: number;
   initialY?: number;
@@ -15,6 +16,7 @@ interface WindowProps {
 export default function Window({
   title,
   onClose,
+  onMinimize,
   children,
   initialX = 50,
   initialY = 50,
@@ -62,6 +64,7 @@ export default function Window({
         {/* Window controls */}
         <div className="flex items-center gap-1.5">
           <button 
+            onClick={onMinimize || onClose}
             className="w-5 h-5 rounded flex items-center justify-center text-gray-500 hover:bg-[#1a1a1a] hover:text-white transition-colors"
             title="Minimize"
           >

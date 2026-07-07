@@ -20,7 +20,7 @@ export default function ProjectDetail() {
   const projectsData: Record<string, ProjectDetails> = {
     "omni-agent": {
       title: "OmniAgent – Offline AI Copilot",
-      github: "https://github.com",
+      github: "https://github.com/ChariteshReddyPatlolla/offline-assitance",
       stack: ["Python", "FastAPI", "LangGraph", "Redis", "ChromaDB", "Ollama", "React"],
       points: [
         "Architected a modular multi-agent system using FastAPI, LangGraph, and local LLMs supporting concurrent task execution and secure workflow orchestration.",
@@ -49,10 +49,61 @@ export default function ProjectDetail() {
         </div>
       )
     },
+    "distributed-gateway": {
+      title: "Distributed AI Inference Gateway",
+      github: "https://github.com/ChariteshReddyPatlolla/Distributed-AI-Inference-Gateway",
+      stack: ["Python", "Distributed Systems", "Concurrency", "Inference Gateway"],
+      points: [
+        "Built a high-performance Distributed AI Inference Gateway supporting request routing and concurrency.",
+        "Managed load distribution across multiple backend inference worker nodes to minimize latency."
+      ],
+      architecture: (
+        <div className="space-y-4">
+          <p>The Distributed AI gateway coordinates requests among multiple inference backends:</p>
+          <pre className="bg-black p-4 border border-[#222] rounded text-[11px] text-[#ccff00] overflow-x-auto leading-normal">
+{`[ Client Request ]
+        │
+        ▼ (Gateway API Port)
+[ Concurrency Controller ]
+        │
+        ▼ (Load Balancer Node)
+ ┌──────┼──────┐
+ ▼      ▼      ▼ (Worker Node Clusters)
+[Node1] [Node2] [Node3]`}
+          </pre>
+        </div>
+      )
+    },
+    "network-analyser": {
+      title: "Network Analyser using ML & LLM",
+      github: "https://github.com/ChariteshReddyPatlolla/Network-Analyser-using-ML-and-LLM",
+      stack: ["Python", "Machine Learning", "LLMs", "Latency Forecasting"],
+      points: [
+        "Intelligent Network Analysis system combining ML and LLMs to predict network latency and bandwidth.",
+        "Built a hybrid deep learning model and interactive dashboard rendering optimization tips and insights."
+      ],
+      architecture: (
+        <div className="space-y-4">
+          <p>This system parses bandwidth logs through deep networks to synthesize advice via LLMs:</p>
+          <pre className="bg-black p-4 border border-[#222] rounded text-[11px] text-[#ccff00] overflow-x-auto leading-normal">
+{`[ Bandwidth & Latency Logs ]
+              │
+              ▼
+    [ ML Predictor Model ] (Hybrid Deep Net)
+              │
+              ▼ (Performance Output metrics)
+    [ LLM Insight generator ] (Llama / GPT)
+              │
+              ▼ (Natural Text Explanations)
+[ UI Dashboard Advisor ]`}
+          </pre>
+        </div>
+      )
+    },
     "finance-management": {
       title: "Finance Management System",
-      github: "https://github.com",
-      stack: ["Flask", "JavaScript", "SQL"],
+      github: "https://github.com/ChariteshReddyPatlolla/Finance-Managment-system",
+      stack: ["Flask", "JavaScript", "SQL", "Expense Dashboard"],
       points: [
         "Designed and implemented a full-stack finance management application using Flask, SQL, and JavaScript.",
         "Developed REST APIs, authentication, and database-backed transaction management with interactive dashboards."
@@ -76,8 +127,8 @@ export default function ProjectDetail() {
     },
     "sign-language": {
       title: "Sign Language Translation System",
-      github: "https://github.com",
-      stack: ["Python", "OpenCV", "TensorFlow"],
+      github: "https://github.com/ChariteshReddyPatlolla/sign-language-translation",
+      stack: ["Python", "OpenCV", "TensorFlow", "Computer Vision"],
       points: [
         "Developed a real-time computer vision pipeline for sign language recognition using OpenCV and TensorFlow.",
         "Implemented preprocessing, augmentation, and optimized inference for reliable real-time prediction."
@@ -97,6 +148,106 @@ export default function ProjectDetail() {
         │
         ▼ (Prediction Probability)
 [ Text Translation Engine ] -> Screen Output`}
+          </pre>
+        </div>
+      )
+    },
+    "lost-found": {
+      title: "lost_found_project",
+      github: "https://github.com/ChariteshReddyPatlolla/lost_found_project",
+      stack: ["JavaScript", "HTML5", "CSS3", "Database Portal"],
+      points: [
+        "Designed a community lost and found portal supporting item reporting and secure query filters.",
+        "Developed simple REST endpoints and client search interactions."
+      ],
+      architecture: (
+        <div className="space-y-4">
+          <p>Lost & Found system data flow:</p>
+          <pre className="bg-black p-4 border border-[#222] rounded text-[11px] text-[#ccff00] overflow-x-auto leading-normal">
+{`[ User Interface ] (Claim / Report Form)
+         │
+         ▼ (REST Request)
+[ Database Controller ]
+         │
+         ▼ (Retrieve matched item rows)
+[ Items Registry DB ]`}
+          </pre>
+        </div>
+      )
+    },
+    "productive-timer": {
+      title: "productive_timer",
+      github: "https://github.com/ChariteshReddyPatlolla/productive_timer",
+      stack: ["TypeScript", "Web Extension", "JavaScript"],
+      points: [
+        "Designed a productivity timer packaged as a lightweight browser extension.",
+        "Integrated session time loggers and stats indicators."
+      ],
+      architecture: (
+        <div className="space-y-4">
+          <p>Productive Timer Web Extension execution layout:</p>
+          <pre className="bg-black p-4 border border-[#222] rounded text-[11px] text-[#ccff00] overflow-x-auto leading-normal">
+{`[ Browser Context ] (Popup UI / Popup window)
+         │
+         ▼ (Message listener channel)
+[ Background Service Worker ] (Time tracker active status)
+         │
+         ▼ (Store session hours logs)
+[ Local browser storage ]`}
+          </pre>
+        </div>
+      )
+    },
+    "stock-prediction": {
+      title: "stock-price-predector",
+      github: "https://github.com/ChariteshReddyPatlolla/stock-price-predector",
+      stack: ["Python", "LSTM", "TensorFlow", "Jupyter Notebook"],
+      points: [
+        "Designed an LSTM time-series model to forecast stock price volatility parameters.",
+        "Validated accuracy with MAE and RMSE performance metrics."
+      ],
+      architecture: (
+        <div className="space-y-4">
+          <p>Predictor training flow diagram:</p>
+          <pre className="bg-black p-4 border border-[#222] rounded text-[11px] text-[#ccff00] overflow-x-auto leading-normal">
+{`[ Historical Stock Rates Data ]
+               │
+               ▼
+   [ Data Preprocessing ] (MinMax scaling)
+               │
+               ▼
+[ Recurrent LSTM Networks ] (Dense forecasting layer)
+               │
+               ▼
+    [ Prediction Volatility ] (Validation RMSE metrics)`}
+          </pre>
+        </div>
+      )
+    },
+    "driver-drowsiness": {
+      title: "driver-drowsiness-detection",
+      github: "https://github.com/ChariteshReddyPatlolla/driver-drowsiness-detection",
+      stack: ["Python", "OpenCV", "Facial Landmarks", "Fatigue Detection"],
+      points: [
+        "Built real-time drowsiness warning classifier using facial landmark cues.",
+        "Monitored eye and mouth aspect ratios to trigger warnings dynamically."
+      ],
+      architecture: (
+        <div className="space-y-4">
+          <p>Driver drowsiness threshold flowchart:</p>
+          <pre className="bg-black p-4 border border-[#222] rounded text-[11px] text-[#ccff00] overflow-x-auto leading-normal">
+{`[ Real-time Video Stream ]
+               │
+               ▼
+     [ Facial Landmark Detector ]
+               │
+       ┌───────┴───────┐
+       ▼               ▼
+[ Eye Ratio (EAR) ] [ Mouth Ratio (MAR) ]
+       │               │
+       └───────┬───────┘
+               ▼
+[ Ratio Threshold Evaluation ] ──► (Sleep / Yawn?) ──► [ Alarm Trigger ]`}
           </pre>
         </div>
       )
