@@ -8,23 +8,27 @@ export default function StackPage() {
   const stack = [
     {
       category: "Languages",
-      items: ["Python", "Java", "JavaScript (ES6+)", "SQL (PostgreSQL / SQLite)"]
+      items: ["Java", "Python", "JavaScript", "SQL"]
     },
     {
-      category: "AI / Machine Learning",
-      items: ["TensorFlow", "PyTorch", "Scikit-Learn", "OpenCV", "CNN architectures (VGGNet)", "YOLO models", "LSTM networks"]
+      category: "Core Skills",
+      items: ["Data Structures", "Algorithms", "OOP", "Concurrency", "Multithreading", "Distributed Systems", "REST APIs"]
     },
     {
-      category: "Systems & Architecture",
-      items: ["Distributed Systems theory", "API Design (RESTful paradigms)", "Concurrency concepts", "Caching mechanisms"]
+      category: "Frameworks & Web",
+      items: ["FastAPI", "Flask", "React", "HTML5", "CSS3"]
     },
     {
-      category: "Web & Backend",
-      items: ["Flask Framework", "REST APIs", "HTML5", "CSS3 / Custom layouts", "React (basics / framework layout)"]
+      category: "Databases",
+      items: ["Redis", "ChromaDB", "SQL"]
     },
     {
-      category: "DevOps & Developer Tools",
-      items: ["Git (Version Control)", "Docker (Containerization)", "Linux (Bash scripting / Shell workflows)", "VS Code workspace config"]
+      category: "Machine Learning (ML)",
+      items: ["TensorFlow", "PyTorch", "OpenCV", "Scikit-learn"]
+    },
+    {
+      category: "DevOps & Tools",
+      items: ["Git (Version Control)", "Docker (Containerization)", "Linux (Bash scripting / Shell workflows)"]
     }
   ];
 

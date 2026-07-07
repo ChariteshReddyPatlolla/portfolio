@@ -161,11 +161,12 @@ export default function Home() {
               <div className="text-gray-500 font-bold uppercase tracking-widest border-b border-[#222] pb-1">FILE // skills.json</div>
               <pre className="text-[#ccff00] leading-normal text-xs bg-black p-3 border border-[#222] rounded max-w-full overflow-x-auto">
 {`{
-  "languages": ["Python", "Java", "JavaScript", "SQL"],
-  "ai_ml": ["TensorFlow", "PyTorch", "Scikit-learn", "CNN", "LSTM"],
-  "systems": ["Distributed Systems", "API Design", "Concurrency", "Caching"],
-  "web_backend": ["Flask", "REST APIs", "HTML5", "CSS3"],
-  "tools": ["Git", "Docker", "Linux", "VS Code"]
+  "languages": ["Java", "Python", "JavaScript", "SQL"],
+  "core": ["Data Structures", "Algorithms", "OOP", "Concurrency", "Multithreading", "Distributed Systems", "REST APIs"],
+  "frameworks": ["FastAPI", "Flask", "React"],
+  "databases": ["Redis", "ChromaDB", "SQL"],
+  "ml": ["TensorFlow", "PyTorch", "OpenCV", "Scikit-learn"],
+  "tools": ["Git", "Docker", "Linux"]
 }`}
               </pre>
             </div>
@@ -177,21 +178,17 @@ export default function Home() {
             <div className="space-y-4 font-mono text-xs text-gray-300">
               <div className="text-gray-500 font-bold uppercase tracking-widest border-b border-[#222] pb-1">DIRECTORY // projects/</div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-                <Link href="/projects/sign-language" className="p-3 border border-[#222] rounded hover:border-[#ccff00] hover:bg-[#ccff00]/5 transition-all">
-                  <div className="font-bold text-white mb-1">sign-language/</div>
-                  <span className="text-[10px] text-gray-500">Fine-tuned CNN on custom datasets.</span>
-                </Link>
-                <Link href="/projects/driver-drowsiness" className="p-3 border border-[#222] rounded hover:border-[#ccff00] hover:bg-[#ccff00]/5 transition-all">
-                  <div className="font-bold text-white mb-1">driver-drowsiness/</div>
-                  <span className="text-[10px] text-gray-500">Facial landmark classifer warning.</span>
+                <Link href="/projects/omni-agent" className="p-3 border border-[#222] rounded hover:border-[#ccff00] hover:bg-[#ccff00]/5 transition-all">
+                  <div className="font-bold text-white mb-1">omni-agent/</div>
+                  <span className="text-[10px] text-gray-500">Offline AI Copilot with local LLMs.</span>
                 </Link>
                 <Link href="/projects/finance-management" className="p-3 border border-[#222] rounded hover:border-[#ccff00] hover:bg-[#ccff00]/5 transition-all">
                   <div className="font-bold text-white mb-1">finance-management/</div>
                   <span className="text-[10px] text-gray-500">Expense tracking & user portals.</span>
                 </Link>
-                <Link href="/projects/stock-prediction" className="p-3 border border-[#222] rounded hover:border-[#ccff00] hover:bg-[#ccff00]/5 transition-all">
-                  <div className="font-bold text-white mb-1">stock-prediction/</div>
-                  <span className="text-[10px] text-gray-500">Time-series forecasting LSTM.</span>
+                <Link href="/projects/sign-language" className="p-3 border border-[#222] rounded hover:border-[#ccff00] hover:bg-[#ccff00]/5 transition-all">
+                  <div className="font-bold text-white mb-1">sign-language/</div>
+                  <span className="text-[10px] text-gray-500">Vision pipeline for translation.</span>
                 </Link>
               </div>
             </div>

@@ -80,7 +80,7 @@ export default function Terminal() {
         } else if (arg.toLowerCase() === "about.txt") {
           response = (
             <div className="text-gray-300 text-xs leading-relaxed max-w-lg">
-              Computer Science undergraduate with strong foundations in AI/ML and Distributed Systems. 
+              Computer Science Undergraduate with strong foundations in Software Engineering and Distributed Systems. 
               Experienced in building scalable, real-time intelligent systems combining deep learning 
               with high-performance backend architectures. Interested in solving complex engineering 
               problems at scale.
@@ -90,11 +90,12 @@ export default function Terminal() {
           response = (
             <pre className="text-[11px] text-gray-400 leading-normal">
 {`{
-  "languages": ["Python", "Java", "JavaScript", "SQL"],
-  "ai_ml": ["TensorFlow", "PyTorch", "Scikit-learn", "CNN", "LSTM"],
-  "systems": ["Distributed Systems", "API Design", "Concurrency", "Caching"],
-  "web_backend": ["Flask", "REST APIs", "HTML5", "CSS3"],
-  "tools": ["Git", "Docker", "Linux", "VS Code"]
+  "languages": ["Java", "Python", "JavaScript", "SQL"],
+  "core": ["Data Structures", "Algorithms", "OOP", "Concurrency", "Multithreading", "Distributed Systems", "REST APIs"],
+  "frameworks": ["FastAPI", "Flask", "React"],
+  "databases": ["Redis", "ChromaDB", "SQL"],
+  "ml": ["TensorFlow", "PyTorch", "OpenCV", "Scikit-learn"],
+  "tools": ["Git", "Docker", "Linux"]
 }`}
             </pre>
           );
@@ -139,9 +140,9 @@ export default function Terminal() {
               <div><span className="text-gray-500">Host:</span> IIIT Vadodara CSE-2027</div>
               <div><span className="text-gray-500">Kernel:</span> 6.8.0-ai-ml-distributed</div>
               <div><span className="text-gray-500">Shell:</span> charitesh-sh v1.0.4</div>
-              <div><span className="text-gray-500">CPI:</span> 7.25 / 10</div>
-              <div><span className="text-gray-500">LeetCode Rating:</span> 1736+ (Top 6%)</div>
-              <div><span className="text-gray-500">Codeforces Rating:</span> 1300+ (Pupil)</div>
+              <div><span className="text-gray-500">CPI:</span> 7.32 / 10</div>
+              <div><span className="text-gray-500">LeetCode Rating:</span> 1836+ (Knight)</div>
+              <div><span className="text-gray-500">Codeforces Rating:</span> 1400+ (Specialist)</div>
             </div>
           </div>
         );

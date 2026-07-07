@@ -33,7 +33,7 @@ export default function PortfolioSection() {
             PATLOLLA <span className="text-[#ccff00]">CHARITESH</span> REDDY
           </h1>
           <p className="text-sm md:text-lg text-gray-500 uppercase tracking-widest font-bold">
-            CSE Student — AI/ML — Distributed Systems
+            Computer Science Undergraduate — Software Engineering — Distributed Systems
           </p>
         </div>
 
@@ -70,8 +70,8 @@ export default function PortfolioSection() {
             <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-[#ccff00] opacity-40 group-hover:opacity-100"></div>
             
             <Trophy className="text-[#ccff00] mb-3" size={24} />
-            <div className="text-3xl font-black text-white">1736+</div>
-            <div className="text-[10px] text-gray-500 uppercase tracking-widest mt-1">LeetCode Rating</div>
+            <div className="text-3xl font-black text-white">1836+</div>
+            <div className="text-[10px] text-gray-500 uppercase tracking-widest mt-1">LeetCode Rating (Knight)</div>
             <p className="text-[11px] text-gray-400 mt-2">Solved 350+ problems with robust algorithm approaches.</p>
           </div>
 
@@ -81,9 +81,9 @@ export default function PortfolioSection() {
             <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-[#ccff00] opacity-40 group-hover:opacity-100"></div>
             
             <Cpu className="text-[#ccff00] mb-3" size={24} />
-            <div className="text-3xl font-black text-white">1300+</div>
-            <div className="text-[10px] text-gray-500 uppercase tracking-widest mt-1">Codeforces Rating</div>
-            <p className="text-[11px] text-gray-400 mt-2">Ranked Pupil. Participated in regular competitive contests.</p>
+            <div className="text-3xl font-black text-white">1400+</div>
+            <div className="text-[10px] text-gray-500 uppercase tracking-widest mt-1">Codeforces Rating (Specialist)</div>
+            <p className="text-[11px] text-gray-400 mt-2">Ranked Specialist. Participated in regular competitive contests.</p>
           </div>
 
           {/* Card 3 */}
@@ -92,7 +92,7 @@ export default function PortfolioSection() {
             <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-[#ccff00] opacity-40 group-hover:opacity-100"></div>
             
             <Award className="text-[#ccff00] mb-3" size={24} />
-            <div className="text-3xl font-black text-white">7.25</div>
+            <div className="text-3xl font-black text-white">7.32</div>
             <div className="text-[10px] text-gray-500 uppercase tracking-widest mt-1">B.Tech CPI / 10</div>
             <p className="text-[11px] text-gray-400 mt-2">Computer Science & Engineering @ IIIT Vadodara.</p>
           </div>
@@ -111,7 +111,7 @@ export default function PortfolioSection() {
           <div className="relative">
             <div className="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-black border-2 border-[#ccff00]"></div>
             <div className="space-y-1">
-              <span className="text-[10px] text-[#ccff00] tracking-widest font-bold bg-[#ccff00]/10 px-2 py-0.5 rounded border border-[#ccff00]/20">B.TECH CSE (CPI: 7.25/10)</span>
+              <span className="text-[10px] text-[#ccff00] tracking-widest font-bold bg-[#ccff00]/10 px-2 py-0.5 rounded border border-[#ccff00]/20">B.TECH CSE (CPI: 7.32/10)</span>
               <h3 className="text-lg font-bold text-white mt-2">Indian Institute of Information Technology, Vadodara</h3>
               <p className="text-xs text-gray-500">Major in Computer Science & Engineering. Strong focus on Deep Learning, Distributed Systems, Concurrency, and Caching architectures.</p>
             </div>
@@ -148,21 +148,27 @@ export default function PortfolioSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Project 1 */}
-          <div className="bg-[#0a0a0a] border border-[#222] p-6 rounded hover:border-[#ccff00]/60 transition-all flex flex-col justify-between">
+          <div className="bg-[#0a0a0a] border border-[#222] p-6 rounded hover:border-[#ccff00]/60 transition-all flex flex-col justify-between md:col-span-2">
             <div className="space-y-3">
               <div className="flex justify-between items-start">
-                <h3 className="text-lg font-bold text-white tracking-tight">Sign Language Translation System</h3>
-                <a href="#" className="text-gray-500 hover:text-[#ccff00]"><ExternalLink size={14} /></a>
+                <h3 className="text-lg font-bold text-white tracking-tight">OmniAgent – Offline AI Copilot</h3>
+                <a href="https://github.com" target="_blank" className="text-gray-500 hover:text-[#ccff00]"><ExternalLink size={14} /></a>
               </div>
-              <p className="text-xs text-gray-400 leading-relaxed">
-                Fine-tuned a custom CNN model on custom gesture datasets for real-time video feed translation. 
-                Built a camera-to-text pipeline and improved gesture robustness.
-              </p>
+              <ul className="text-xs text-gray-400 space-y-2 list-disc list-inside">
+                <li>Architected a modular multi-agent system using FastAPI, LangGraph, and local LLMs supporting concurrent task execution and secure workflow orchestration.</li>
+                <li>Designed an asynchronous Redis-backed backend enabling scalable, non-blocking request processing.</li>
+                <li>Implemented deterministic command routing using Regex and OS APIs to reduce execution latency by bypassing unnecessary LLM inference.</li>
+                <li>Built workspace-aware Retrieval-Augmented Generation (RAG) with ChromaDB and developed approval middleware for secure tool execution.</li>
+              </ul>
             </div>
             <div className="flex flex-wrap gap-2 mt-4 text-[10px]">
               <span className="bg-[#111] px-2 py-1 rounded text-[#ccff00] border border-[#222]">Python</span>
-              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">OpenCV</span>
-              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">CNN (VGGNet)</span>
+              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">FastAPI</span>
+              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">LangGraph</span>
+              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">Redis</span>
+              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">ChromaDB</span>
+              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">Ollama</span>
+              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">React</span>
             </div>
           </div>
 
@@ -170,18 +176,18 @@ export default function PortfolioSection() {
           <div className="bg-[#0a0a0a] border border-[#222] p-6 rounded hover:border-[#ccff00]/60 transition-all flex flex-col justify-between">
             <div className="space-y-3">
               <div className="flex justify-between items-start">
-                <h3 className="text-lg font-bold text-white tracking-tight">Driver Drowsiness Detection System</h3>
-                <a href="#" className="text-gray-500 hover:text-[#ccff00]"><ExternalLink size={14} /></a>
+                <h3 className="text-lg font-bold text-white tracking-tight">Finance Management System</h3>
+                <a href="https://github.com" target="_blank" className="text-gray-500 hover:text-[#ccff00]"><ExternalLink size={14} /></a>
               </div>
-              <p className="text-xs text-gray-400 leading-relaxed">
-                Built real-time drowsiness warning classifier using facial landmark cues. 
-                Visualized convolutional model attention layers using heatmaps for enhanced interpretability.
-              </p>
+              <ul className="text-xs text-gray-400 space-y-2 list-disc list-inside">
+                <li>Designed and implemented a full-stack finance management application using Flask, SQL, and JavaScript.</li>
+                <li>Developed REST APIs, authentication, and database-backed transaction management with interactive dashboards.</li>
+              </ul>
             </div>
             <div className="flex flex-wrap gap-2 mt-4 text-[10px]">
-              <span className="bg-[#111] px-2 py-1 rounded text-[#ccff00] border border-[#222]">YOLO</span>
-              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">OpenCV</span>
-              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">Python</span>
+              <span className="bg-[#111] px-2 py-1 rounded text-[#ccff00] border border-[#222]">Flask</span>
+              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">JavaScript</span>
+              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">SQL</span>
             </div>
           </div>
 
@@ -189,57 +195,42 @@ export default function PortfolioSection() {
           <div className="bg-[#0a0a0a] border border-[#222] p-6 rounded hover:border-[#ccff00]/60 transition-all flex flex-col justify-between">
             <div className="space-y-3">
               <div className="flex justify-between items-start">
-                <h3 className="text-lg font-bold text-white tracking-tight">Finance Management System</h3>
-                <a href="#" className="text-gray-500 hover:text-[#ccff00]"><ExternalLink size={14} /></a>
+                <h3 className="text-lg font-bold text-white tracking-tight">Sign Language Translation System</h3>
+                <a href="https://github.com" target="_blank" className="text-gray-500 hover:text-[#ccff00]"><ExternalLink size={14} /></a>
               </div>
-              <p className="text-xs text-gray-400 leading-relaxed">
-                Developed a full-stack financial expense tracking web application. 
-                Integrated secure user verification gateways and dynamic graph visualization panels.
-              </p>
+              <ul className="text-xs text-gray-400 space-y-2 list-disc list-inside">
+                <li>Developed a real-time computer vision pipeline for sign language recognition using OpenCV and TensorFlow.</li>
+                <li>Implemented preprocessing, augmentation, and optimized inference for reliable real-time prediction.</li>
+              </ul>
             </div>
             <div className="flex flex-wrap gap-2 mt-4 text-[10px]">
-              <span className="bg-[#111] px-2 py-1 rounded text-[#ccff00] border border-[#222]">Flask</span>
-              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">JavaScript</span>
-              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">HTML/CSS</span>
-            </div>
-          </div>
-
-          {/* Project 4 */}
-          <div className="bg-[#0a0a0a] border border-[#222] p-6 rounded hover:border-[#ccff00]/60 transition-all flex flex-col justify-between">
-            <div className="space-y-3">
-              <div className="flex justify-between items-start">
-                <h3 className="text-lg font-bold text-white tracking-tight">Stock Price Prediction using LSTM</h3>
-                <a href="#" className="text-gray-500 hover:text-[#ccff00]"><ExternalLink size={14} /></a>
-              </div>
-              <p className="text-xs text-gray-400 leading-relaxed">
-                Designed a time-series forecasting model using deep recurrent LSTM layers. 
-                Optimized prediction scaling using MAE and RMSE validation grids.
-              </p>
-            </div>
-            <div className="flex flex-wrap gap-2 mt-4 text-[10px]">
-              <span className="bg-[#111] px-2 py-1 rounded text-[#ccff00] border border-[#222]">TensorFlow</span>
-              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">Python</span>
-              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">LSTM</span>
+              <span className="bg-[#111] px-2 py-1 rounded text-[#ccff00] border border-[#222]">Python</span>
+              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">OpenCV</span>
+              <span className="bg-[#111] px-2 py-1 rounded text-gray-400 border border-[#222]">TensorFlow</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 5. Achievements */}
+      {/* 5. Achievements & Competitive Programming */}
       <section className="space-y-8">
         <div className="flex items-center gap-3">
-          <h2 className="text-xl md:text-2xl font-black text-white uppercase tracking-tight">ACHIEVEMENTS</h2>
+          <h2 className="text-xl md:text-2xl font-black text-white uppercase tracking-tight">ACHIEVEMENTS_LOG</h2>
           <div className="h-px flex-1 bg-[#111]"></div>
         </div>
 
         <ul className="space-y-3 text-xs md:text-sm text-gray-400">
           <li className="flex items-start gap-2.5">
             <span className="text-[#ccff00] shrink-0 font-bold">&gt;</span>
-            <span>LeetCode competitive score: <strong className="text-white">1736+</strong> (Solved 350+ data structures problems).</span>
+            <span>LeetCode competitive score: <strong className="text-white">1836+ Knight</strong> (Solved 350+ data structures and algorithms problems).</span>
           </li>
           <li className="flex items-start gap-2.5">
             <span className="text-[#ccff00] shrink-0 font-bold">&gt;</span>
-            <span>Codeforces global ranking: <strong className="text-white">1300+</strong> (Pupil).</span>
+            <span>Codeforces competitive ranking: <strong className="text-white">1400+ Specialist</strong>.</span>
+          </li>
+          <li className="flex items-start gap-2.5">
+            <span className="text-[#ccff00] shrink-0 font-bold">&gt;</span>
+            <span>Strong understanding of Graph Algorithms, Dynamic Programming, Trees, Binary Search, Greedy Algorithms, Segment Trees, and String Algorithms.</span>
           </li>
           <li className="flex items-start gap-2.5">
             <span className="text-[#ccff00] shrink-0 font-bold">&gt;</span>

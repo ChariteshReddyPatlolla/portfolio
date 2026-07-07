@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Charitesh-OS: Cyber-OS Portfolio Workstation
 
-## Getting Started
+A retro, cyberpunk operating system-themed portfolio workstation designed and built for **Patlolla Charitesh Reddy** (Computer Science Undergraduate — Software Engineering & Distributed Systems).
 
-First, run the development server:
+🔗 **Live Deployment Link:** [https://portfolio-mot539ykr-charitesh.vercel.app/](https://portfolio-mot539ykr-charitesh.vercel.app/)
 
+---
+
+## 🖥️ Core Features
+
+*   **Retro BIOS Boot Sequence:** An old-school computer initialization loading screen testing CPU cores, system RAM, local disk mounts, and machine learning models (skippable with `ESC` or `ENTER`).
+*   **Locked Security Lock Screen:** Displays real-time digital clock, calendar dates, network nodes uptime, and an override system entry gateway.
+*   **Interactive Desktop Dashboard:** Curated grid mesh styling with CRT scanline flicker filter. Renders draggable/resizable window app panels powered by Framer Motion.
+*   **Programmatic Soundtrack Synthesizer:** Renders a lo-fi ambient background hum using browser Web Audio API oscillators (100% code-generated, zero external assets).
+*   **Fully Functional Shell Terminal:** A retro CLI prompt supporting custom executable commands:
+    *   `help` - lists shell commands.
+    *   `ls` - directories mapping (`about.txt`, `skills.json`, `contact.sh`, `secret.enc`).
+    *   `cat <file>` - prints file data (obj description, tech stack JSON matrix).
+    *   `neofetch` - displays CPU ASCII art alongside specs.
+    *   `./contact.sh` - resolves contact details (email, phone, LinkedIn, GitHub, LeetCode).
+    *   `clear` - wipes terminal history logs.
+*   **Seamless Database Portfolio:** Scroll down past the desktop to load a content-dense linear portfolio mapping algorithm metrics (LeetCode 1836+ Knight, Codeforces 1400+ Specialist), education timeline, project grid breakdowns (OmniAgent, Finance Tracker, Sign Language System), achievements, and a message dispatch console.
+*   **Custom Sub-routes:**
+    *   `/who-is-charitesh` - Q&A panel.
+    *   `/guestbook` - client-side LocalStorage guestbook log commits.
+    *   `/blog` & `/blog/[slug]` - retro engineering blogs.
+    *   `/now` & `/uses` - current focuses and developer setup gear index.
+    *   `/stack` - full technologies index.
+    *   `/charitesh` - printable resume layout.
+
+---
+
+## 🛠️ Tech Stack
+
+*   **Framework:** Next.js 16 (App Router)
+*   **Core:** React 19, TypeScript
+*   **Styling:** Tailwind CSS v4 (configured with CSS theme variables, CRT monitors flicker keyframes, text shadows)
+*   **Animations:** Framer Motion (window dragging / spring animations)
+*   **Icons:** Lucide React
+
+---
+
+## 🚀 Getting Started
+
+### Local Development
+
+1. Clone the repository:
+   ```bash
+   git clone <your-repository-url>
+   cd portfolio
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Production Compiles
+
+To compile and verify the build locally:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm run start
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

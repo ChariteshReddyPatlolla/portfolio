@@ -18,58 +18,33 @@ export default function ProjectDetail() {
   const slug = params.slug as string;
 
   const projectsData: Record<string, ProjectDetails> = {
-    "sign-language": {
-      title: "Sign Language Translation System",
+    "omni-agent": {
+      title: "OmniAgent – Offline AI Copilot",
       github: "https://github.com",
-      stack: ["Python", "OpenCV", "VGGNet", "CNN"],
+      stack: ["Python", "FastAPI", "LangGraph", "Redis", "ChromaDB", "Ollama", "React"],
       points: [
-        "Fine-tuned CNN model on custom dataset for gesture classification.",
-        "Developed real-time pipeline using live camera feed for gesture-to-text translation.",
-        "Improved model robustness using augmentation and preprocessing techniques."
+        "Architected a modular multi-agent system using FastAPI, LangGraph, and local LLMs supporting concurrent task execution and secure workflow orchestration.",
+        "Designed an asynchronous Redis-backed backend enabling scalable, non-blocking request processing.",
+        "Implemented deterministic command routing using Regex and OS APIs to reduce execution latency by bypassing unnecessary LLM inference.",
+        "Built workspace-aware Retrieval-Augmented Generation (RAG) with ChromaDB and developed approval middleware for secure tool execution."
       ],
       architecture: (
         <div className="space-y-4">
-          <p>The vision processing pipeline executes model inference on raw camera frames:</p>
+          <p>The OmniAgent system runs multi-agent pipelines with local model inferences and vector database lookups:</p>
           <pre className="bg-black p-4 border border-[#222] rounded text-[11px] text-[#ccff00] overflow-x-auto leading-normal">
-{`[ Live Video Stream ]
-        │
-        ▼ (OpenCV Capture Frame)
-[ Pre-processing Node ]
-        │  - Resize to 224x224
-        │  - Normalize & Augment
-        ▼
-[ VGGNet / CNN Classifier ] (Fine-tuned Model)
-        │
-        ▼ (Prediction Probability)
-[ Text Translation Engine ] -> Screen Output`}
-          </pre>
-        </div>
-      )
-    },
-    "driver-drowsiness": {
-      title: "Driver Drowsiness Detection System",
-      github: "https://github.com",
-      stack: ["YOLO", "OpenCV", "Python"],
-      points: [
-        "Built real-time detection system to classify alert vs drowsy states using facial cues.",
-        "Visualized model attention using heatmaps for interpretability.",
-        "Optimized inference pipeline for real-time performance."
-      ],
-      architecture: (
-        <div className="space-y-4">
-          <p>This system tracks blink frequency and yawning frames to assess driver fatigue levels:</p>
-          <pre className="bg-black p-4 border border-[#222] rounded text-[11px] text-[#ccff00] overflow-x-auto leading-normal">
-{`[ Camera Input Feed ]
-        │
-        ▼ (OpenCV Capture)
-[ Facial Landmarks Extractor ] (YOLO Detector)
-        │
-        ├──► [ Eye aspect ratio (EAR) ] ──┐
-        │                                  ▼
-        └──► [ Mouth aspect ratio (MAR) ] ─┼─► [ Drowsy Check ]
-                                           │        │
-[ Alarm Trigger Node ] ◄───────────────────┘        ▼ (Yes)
-                                               [ Sound Alert ]`}
+{`[ Web Client User Input ] (React Interface)
+              │
+              ▼ (Async HTTP REST Request)
+[ FastAPI Routing Gateway ]
+              │
+       ┌──────┴──────┐ (Regex / Deterministic Router)
+       ▼             ▼
+[ Fast-path OS API ] [ LangGraph Multi-Agent Stack ]
+       │             │  - Local LLMs (Ollama)
+       │             ├─► [ RAG Memory ] (ChromaDB)
+       │             └─► [ Task Queue ] (Redis Async Worker)
+       ▼             ▼
+[ Final Unified Output Pipeline ] -> Client UI`}
           </pre>
         </div>
       )
@@ -79,8 +54,8 @@ export default function ProjectDetail() {
       github: "https://github.com",
       stack: ["Flask", "JavaScript", "SQL"],
       points: [
-        "Developed full-stack application for expense tracking and budget analysis.",
-        "Implemented secure authentication and dynamic visualization dashboards."
+        "Designed and implemented a full-stack finance management application using Flask, SQL, and JavaScript.",
+        "Developed REST APIs, authentication, and database-backed transaction management with interactive dashboards."
       ],
       architecture: (
         <div className="space-y-4">
@@ -99,32 +74,29 @@ export default function ProjectDetail() {
         </div>
       )
     },
-    "stock-prediction": {
-      title: "Stock Price Prediction using LSTM",
+    "sign-language": {
+      title: "Sign Language Translation System",
       github: "https://github.com",
-      stack: ["TensorFlow", "Python", "LSTM"],
+      stack: ["Python", "OpenCV", "TensorFlow"],
       points: [
-        "Designed LSTM-based time series forecasting model for stock trends.",
-        "Implemented multi-step prediction and evaluated using RMSE and MAE metrics.",
-        "Applied regularization and feature engineering to improve generalization."
+        "Developed a real-time computer vision pipeline for sign language recognition using OpenCV and TensorFlow.",
+        "Implemented preprocessing, augmentation, and optimized inference for reliable real-time prediction."
       ],
       architecture: (
         <div className="space-y-4">
-          <p>The time-series forecasting layers feed historical pricing matrices into recurrent memory cells:</p>
+          <p>The vision processing pipeline executes model inference on raw camera frames:</p>
           <pre className="bg-black p-4 border border-[#222] rounded text-[11px] text-[#ccff00] overflow-x-auto leading-normal">
-{`[ Raw Price Inputs ]
+{`[ Live Video Stream ]
         │
-        ▼ (60-day sequence slice)
-[ Feature Scaling Node ]
+        ▼ (OpenCV Capture Frame)
+[ Pre-processing Node ]
+        │  - Resize & Grayscale
+        │  - Normalize & Augment
+        ▼
+[ TensorFlow CNN Classifier ] (Fine-tuned Model)
         │
-        ▼ (Input Layer)
-[ Recurrent LSTM Cell Stack ] (TensorFlow Engine)
-        │
-        ▼ (Fully Connected Layer)
-[ Dense Output Node ] -> Predict Volatility Trend
-        │
-        ▼ (Validation Loop)
-[ MAE / RMSE Evaluation ]`}
+        ▼ (Prediction Probability)
+[ Text Translation Engine ] -> Screen Output`}
           </pre>
         </div>
       )
